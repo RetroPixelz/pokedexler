@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+.LOGO {
+  float: left;
+  background-image: url(./components/pokeball2.gif);
+  background-size: contain;
+  width: 4%; 
+  background-color: rgb(77, 77, 77);
+  margin: auto;
+  height: 70px;
+}
+
+.nav {
+  background-color: rgb(77, 77, 77);
+  margin: 0 auto;
+  text-align: center;
+  height: 70px;
+  border-bottom: 2px black solid;
+}
+
+a{
+  font-size: 35px;
+  color: black;
+  float: left;
+  margin: 20px;
+}
+
+a:hover {
+  color: red;
+}
