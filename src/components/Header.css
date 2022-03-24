@@ -1,0 +1,39 @@
+.nav-container {
+    width: 25%;
+    height: 100vh;
+    background-color: rgb(54, 54, 54);
+    border-right: 5px solid red;
+  }
+  
+  .nav {
+    width: 25%;
+    height: 100vh;
+    margin: auto;
+  }
+
+  .logo {
+      width: 200px;
+      height: 200px;
+      padding: 5px;
+      background-image: url(../LOGO.gif);
+      margin: auto;
+  }
+
+  ul {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 30px;
+    text-decoration: underline;
+  }
+
+  h2:hover {
+   color: black;
+  }
+  
