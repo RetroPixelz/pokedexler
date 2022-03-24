@@ -6,6 +6,7 @@ import { render } from "@testing-library/react";
 import PokeDex from "./components/PokeDexComponent/PokeDex";
 import './index.css'
 import './components/Header.css'
+import './components/PokeDexComponent/Pokedex.css'
 
 const rootElement = document.getElementById("root");
 render(
@@ -13,7 +14,6 @@ render(
     <Routes>
       <Route path="/" element={<Header />}>
       <Route path="/PokeDex" element={<PokeDex />} />
-        
       </Route>
     </Routes>
   </BrowserRouter>,

@@ -1,5 +1,16 @@
-.dex {
+.Dex {
     width: 100%;
     height: 100vh;
-    background-color: blue;
+    
 }
+h1 {
+    float: right;
+}
+
+.block-2 {
+    float: right;
+    width: 80%;
+    height: 100vh;
+    background-color: blueviolet;
+    background-image: url();
+  }

@@ -2,6 +2,8 @@ import { Link, Outlet } from "react-router-dom";
 
 
 
+
+
 export default function Header() {
     return (
       <main>
@@ -15,6 +17,9 @@ export default function Header() {
           
           </ul>
         </div>
+
+       
+        
         <Outlet />
       </main>
     );
