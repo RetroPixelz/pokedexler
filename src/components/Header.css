@@ -19,6 +19,8 @@
       margin: auto;
   }
 
+
+
   ul {
     list-style-type: none;
     text-decoration: none;
@@ -50,9 +52,9 @@
   }
 
 
-.hero-text {
-  width: 30%;
-  height: 300px;
+.hero-text2 {
+  width: 60%;
+  height: 200px;
   margin: auto;
 }
 

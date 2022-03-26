@@ -9,9 +9,9 @@ const PokeDex = () => {
         <>
              <div className="background">
 
-<div className="hero-text">
-  <h1>Welcome To The PokeDexLer !</h1>
-  <h3> Have a look through our extensive and impressive pokedex, or better yet go battle and brawl it our with you favourite pokemon ! </h3>
+<div className="hero-text2">
+  <h1>HAVE A LOOK AT OUR POKEDEX</h1>
+  
 </div>
   
 <div className="block-1">
@@ -37,7 +37,7 @@ const PokeDex = () => {
   </div>
   <div className="right-section">
     <div className="poke-list">
-
+    
     </div>
   </div>
   

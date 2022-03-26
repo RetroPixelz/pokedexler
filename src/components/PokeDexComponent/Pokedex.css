@@ -14,3 +14,10 @@ h1 {
     background-color: blueviolet;
     background-image: url();
   }
+
+  .hero-text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+

@@ -1,0 +1,22 @@
+.battleground2 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.644);
+}
+
+.hero-text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Anton', sans-serif;
+}
+
+h3 {
+    font-size: 35px;
+    font-family: 'Cinzel', serif;
+}
+

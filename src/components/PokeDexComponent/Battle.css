@@ -1,0 +1,7 @@
+.battleground {
+    background-image: url(../PokeDexComponent/BattleGround.jpg);
+    background-attachment: fixed;
+    float: right;
+    width: 85%;
+    height: 150vh;
+}
