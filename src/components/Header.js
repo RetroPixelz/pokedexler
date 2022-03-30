@@ -9,7 +9,7 @@ export default function Header() {
       <main>
         <div className="nav-container">
 
-            <div className="logo"> </div>
+          <div className="logo"> </div>
           <ul className="nav">
               
             

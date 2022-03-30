@@ -1,11 +1,14 @@
 import React from "react";
+import axios from "axios";
 import 'react-router-dom';
 import Header from './components/Header'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { useState, useEffect} from 'react';
 import { render } from "@testing-library/react";
 import PokeDex from "./components/PokeDexComponent/PokeDex";
 import Battle from './components/PokeDexComponent/Battle'
 import Main from './components/PokeDexComponent/Main'
+import Card from "./components/PokeDexComponent/Card";
 import './index.css'
 import './components/Header.css'
 import './components/PokeDexComponent/Pokedex.css'

@@ -1,7 +1,8 @@
 .battleground2 {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(255, 0, 0, 0.644);
+    width: calc(85%);
+    float: right;
+    height: 200vh;
+    background-color: rgba(37, 189, 176, 0.644);
 }
 
 .hero-text {
@@ -10,13 +11,136 @@
     text-align: center;
 }
 
-h1 {
-    font-size: 80px;
-    font-family: 'Anton', sans-serif;
-}
+
+
 
 h3 {
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Cinzel', serif;
 }
 
+.box {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    }
+
+.block:nth-child(1) {
+    width: calc(100%/3);
+    height: 100%;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-start;
+   
+    }
+
+    .pie {
+        margin: auto;
+        margin-top: 80px;
+        width: 50%;
+        height: 50%;
+        background-image: url(../PokeDexComponent/PIE.png);
+        background-size: 100% 100%;
+    }
+
+.block:nth-child(2) {
+    width: calc(100%/3);
+
+    height: 100%;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-end;
+    
+
+    }
+
+    .doughnut {
+        margin: auto;
+        margin-top: 80px;
+        width: 50%;
+        height: 50%;
+        background-image: url(../PokeDexComponent/DOUGHNUT.png);
+        background-size: 100% 100%;
+    }
+
+.block:nth-child(3) {
+    width: calc(100%/3);
+
+    height: 100%;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    
+   
+    }
+
+    .bar {
+        margin: auto;
+        margin-top: 80px;
+        width: 50%;
+        height: 50%;
+        background-image: url(../PokeDexComponent/BAR.png);
+        background-size: 100% 100%;
+    }
+
+.block:hover {
+    -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.096);
+  border-radius: 150px;
+}
+
+.show {
+    width: calc(100%);
+    height: 600px;
+    float: right;
+    
+}
+
+
+
+/*     
+.blocks {
+    float: right;
+    width: 85%;
+    height: 400px;
+    background-color: green;
+    
+}
+
+
+    .BlockOne {
+        height: 100px;
+        width: 33%;
+        background-color: black;
+        float: left;
+      
+    }
+
+    .BlockTwo {
+        height: 100px;
+        width: 33%;
+        background-color: rgb(0, 195, 255);
+        float: left;
+       
+       
+
+    }
+
+    .BlockThree {
+        height: 100px;
+        width: 33%;
+        background-color: black;
+        float: left;
+        
+       
+
+    } */
