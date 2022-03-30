@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Card from "./Card";
+
 
 import axios from "axios";
 import { Outlet } from "react-router-dom";
@@ -7,6 +9,77 @@ export default function Battle(){
 
     const [genPokeCard, SetGenPokeCard] = useState([]);
 
+
+    const [genPokeListItem, setgenPokeListItem] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=100")
+      .then((response) => {
+        let pokemons = response.data.results;
+
+        const pokeData = [];
+
+        for (let i = 0; i < pokemons.length; i++) {
+          pokeData.push({
+            name: pokemons[i].name,
+            url: pokemons[i].url,
+          });
+        }
+
+        let startItem = pokeData.map((item) => <option pname={item.name} />);
+        setgenPokeListItem(startItem);
+        console.log(pokeData);
+
+      });
+
+      // function genPoke() {
+      //   for (let i = 0; i < startItem.length; i++) {
+      //     if(startItem === [i]+1){
+      //       .push(imgURL)
+      //     }
+        
+      // }
+      // }
+
+
+
+  // const [selpokemon, setSelPokemon] = useState([]);
+
+  // const [pokeName, setPokeName] = useState([]);
+  // const [pokeUrl, setPokeUrl] = useState([]);
+
+  // let selectedPoke = useRef();
+
+
+  //     const getPoke = () => {
+
+  //       let chosenPoke = startItem;
+  //       let pokeId = '';
+
+  //       for (let i = 0; i < pokemon.length; i++) {
+  //         if(pokemon[i].name === chosenPoke){
+  //            pokeId = pokemon[i].id;
+
+  //         }
+  //       }
+
+  //       let newURL = 'https://pokeapi.co/api/v2/pokemon/' + pokeId;
+
+  //       axios.get(newURL)
+  //       .then((response)=>{
+  //         console.log(response.data.results)
+  //         let data = response.data;
+
+  //         setPokeName(data.name);
+  //         setPokeUrl(data.url);
+
+  //       })
+
+  //     }
+  }, []);
+
+    
     // useEffect(() => {
     //     axios.get('https://pokeapi.co/api/v2/pokemon/' )
 
@@ -41,8 +114,11 @@ export default function Battle(){
             <div className="row-1">
                 <div className="left">
                 <div className="select1">
+             
+
                         <select id="first">
-                            <option>pokemojn</option>
+                            <option>              {genPokeListItem}
+</option>
                         </select>
                     </div>
                 </div>
@@ -50,7 +126,7 @@ export default function Battle(){
                 <div className="right"> 
                     <div className="select2">
                         <select id="second">
-                            <option>pokemojn</option>
+                            <option>pokemon</option>
                         </select>
                     </div>
                 </div>

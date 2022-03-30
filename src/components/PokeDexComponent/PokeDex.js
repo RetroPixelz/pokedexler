@@ -25,14 +25,15 @@ const PokeDex = () => {
           });
         }
 
-        let startItem = pokeData.map((item) => <Card pname={item.name} />);
+        let startItem = pokeData.map((item) => <Card pname={item.name}  plink={item.url}/>);
         setgenPokeListItem(startItem);
         console.log(pokeData);
 
-        
-
-
       });
+
+    }, []);
+
+
 
       // function genPoke() {
       //   for (let i = 0; i < startItem.length; i++) {
@@ -78,8 +79,7 @@ const PokeDex = () => {
   //       })
 
   //     }
-  }, []);
-
+ 
   // const [genPokePic, setgenPokePic] = useState([]);
 
   // useEffect(() => {
@@ -150,7 +150,7 @@ const PokeDex = () => {
     <>
       <div className="background">
         <div className="hero-text2">
-          <h1>HAVE A LOOK AT OUR POKEDEX</h1>
+          <h1>HAVE A LOOK AT YOUR POKEDEX</h1>
         </div>
 
         <div className="block-1">
@@ -160,13 +160,14 @@ const PokeDex = () => {
             <button className="btn3"></button>
 
             <div className="screen">
-              <div className="sprite"></div>
+              <div className="sprite" id="imge">
+
+              </div>
 
               <div className="information">
-                <h4> Health: </h4>
-                <h4> Damage: </h4>
-                <h4> Type: </h4>
-                <h4> Type: </h4>
+                <h4> Health: <h4 id="hp"></h4>  </h4> 
+                <h4> Damage: <h4 id="dmg"></h4> </h4>
+                
               </div>
             </div>
           </div>
