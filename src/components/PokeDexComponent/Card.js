@@ -22,12 +22,11 @@ import React from "react";
           let dmg = document.getElementById("dmg")
           let imgURL = Response.data.sprites.front_default
           let imgStyle = document.getElementById("imge")
-
           hp.appendChild(document.createTextNode(Response.data.stats[0].base_stat))
           dmg.appendChild(document.createTextNode(Response.data.stats[1].base_stat))
 
           imgStyle.style.backgroundImage="url("+ imgURL +")"
-          // document.getElementById("imge").style.backgroundImage="'url("  + Response.data.sprites.front_default.url +  ")'";                      
+          document.getElementById("imge").style.backgroundImage="'url("  + Response.data.sprites.front_default.url +  ")'";                      
       })
     }
 

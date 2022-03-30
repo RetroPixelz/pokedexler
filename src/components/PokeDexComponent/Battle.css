@@ -3,7 +3,7 @@
     background-attachment: fixed;
     float: right;
     width: 85%;
-    height: 150vh;
+    height: 120vh;
 }
 /* 
 .flex-container {
@@ -98,8 +98,8 @@
 
 .flex-item:nth-child(1) {
     margin-right: 50px;
-    width: 400px;
-    height: 100%;
+    width: 350px;
+    height: 80%;
     background: rgb(236,78,78);
     background: linear-gradient(90deg, rgba(236,78,78,1) 15%, rgba(255,144,144,1) 40%, rgba(255,38,38,1) 63%, rgba(247,143,143,1) 81%);
     border: 15px #c7a008 solid;
@@ -111,7 +111,7 @@
 
 .pokemon-1 {
     border-radius: 15px;
-    width: 350px;
+    width:300px;
     height: 50%;
     
     border: 2px #B3A125 solid;
@@ -129,8 +129,8 @@ h3 {
 }
 
 .flex-item:nth-child(2) {
-    width: 400px;
-    height: 100%;
+    width: 350px;
+    height: 80%;
     
     order: 0;
     flex: 0 1 auto;
@@ -139,7 +139,7 @@ h3 {
 
     #fight h2 {
         font-size: 40px;
-        margin-left: 150px;
+        margin-left: 125px;
         color: black;
     }
 
@@ -174,8 +174,9 @@ h3 {
 
 .flex-item:nth-child(3) {
     margin-left: 50px;
-    width: 400px;
-    height: 100%;background: rgb(236,78,78);
+    width: 350px;
+    height: 80%;
+    background: rgb(236,78,78);
     background: linear-gradient(90deg, rgba(236,78,78,1) 15%, rgba(255,144,144,1) 40%, rgba(255,38,38,1) 63%, rgba(247,143,143,1) 81%);
     border: 15px #c7a008 solid;
     border-radius: 15px;
@@ -187,7 +188,7 @@ h3 {
 
     .pokemon-2 {
         border-radius: 15px;
-        width: 350px;
+        width: 300px;
         height: 50%;
         border: 2px #B3A125 solid;
         margin: 25px;
