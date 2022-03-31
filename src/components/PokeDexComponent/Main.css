@@ -7,8 +7,12 @@
 
 .hero-text {
     width: 50%;
+    height: 220px;
+    
     margin: auto;
     text-align: center;
+    background-image: url(../PokeDexComponent/PokeMonLogo.png);
+    background-size: 100% 100%;
 }
 
 

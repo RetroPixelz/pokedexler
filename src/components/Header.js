@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import Battle from "./PokeDexComponent/Battle";
 
 
 
@@ -15,7 +16,9 @@ export default function Header() {
             
             <li><Link to="/main"> <h2>Home</h2> </Link></li>
             <li><Link to="/PokeDex"><h2>PokeDex</h2> </Link></li>
-            <li><Link to="/Battle"><h2>Battle</h2> </Link></li>
+            <li><Link to="/Battle"> <h2>Battle</h2> </Link></li>
+            <li><Link to="/TimeLine"><h2>TimeLine</h2> </Link></li>
+
             
 
             

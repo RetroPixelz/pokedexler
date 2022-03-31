@@ -19,11 +19,23 @@
       margin: auto;
   }
 
+  #battle {
+    background-color: red;
+    background-image: url(./PokeDexComponent/battle.png);
+    width: 100px;
+    width: 100px;
+  }
 
 
   ul {
     list-style-type: none;
     text-decoration: none;
+  }
+
+  li {
+    height: 50px;
+    width: 50px;
+    
   }
 
   h2 {

@@ -8,12 +8,16 @@ import { render } from "@testing-library/react";
 import PokeDex from "./components/PokeDexComponent/PokeDex";
 import Battle from './components/PokeDexComponent/Battle'
 import Main from './components/PokeDexComponent/Main'
+import TimeLine from "./components/PokeDexComponent/TimeLine";
 import Card from "./components/PokeDexComponent/Card";
+
 import './index.css'
 import './components/Header.css'
 import './components/PokeDexComponent/Pokedex.css'
 import './components/PokeDexComponent/Battle.css'
 import './components/PokeDexComponent/Main.css'
+import './components/PokeDexComponent/TimeLine.css'
+
 
 const rootElement = document.getElementById("root");
 render(
@@ -23,6 +27,8 @@ render(
       <Route path="/Main" element={<Main />} />
       <Route path="/PokeDex" element={<PokeDex />} />
       <Route path="/Battle" element={<Battle />} />
+      <Route path="/TimeLine" element={<TimeLine />} />
+
       </Route>
     </Routes>
   </BrowserRouter>,

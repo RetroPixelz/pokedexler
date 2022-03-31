@@ -1,0 +1,20 @@
+.Back {
+    width: 85%;
+    height: 100vh;
+    float: right;
+    background-color: red;
+}
+
+.Statement {
+    width: 50%;
+    height: 200px;
+    background-color: blue;
+    margin: auto;
+}
+
+.TLine {
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    background-color: black;
+}
