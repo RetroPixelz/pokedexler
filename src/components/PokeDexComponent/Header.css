@@ -1,0 +1,60 @@
+
+.nav-container {
+    width: 15%;
+    height: 120vh;
+    background-color: rgb(54, 54, 54);
+    float: left;
+  }
+  
+  .nav {
+    width: 25%;
+    height: 100vh;
+    margin-left: 25px;
+  }
+
+  .logo {
+      width: 200px;
+      height: 200px;
+      padding: 5px;
+      background-image: url(./LOGO.gif);
+      margin: auto;
+  }
+
+  #battle {
+    background-color: red;
+    background-image: url(./battle.png);
+    width: 100px;
+    width: 100px;
+  }
+
+
+  ul {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  li {
+    height: 50px;
+    width: 50px;
+    
+  }
+
+  h2 {
+    font-size: 30px;
+    color: rgb(200 16 46);
+    text-decoration: none;
+    margin: auto;
+    margin-top: 30px;
+    text-decoration: underline;
+  }
+
+  h2:hover {
+   color: black;
+  }
+  
+
+  
+
+ 
+
+

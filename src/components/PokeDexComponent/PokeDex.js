@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import axios from "axios";
 import Card from "./Card";
 
+import './Pokedex.css'
 
 import { useState, useEffect } from "react";
 

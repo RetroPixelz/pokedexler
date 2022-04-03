@@ -1,6 +1,6 @@
 import react from 'react';
 import {Bar, bar, Line} from 'react-chartjs-2'
-
+import './TimeLine.css'
 
 
 const TimeLine = () => {

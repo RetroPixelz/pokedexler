@@ -3,6 +3,10 @@ import React from "react";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import ChartOne from "./ChartOne";
+import ChartTwo from "./CHartTwo";
+
+import './Main.css'
+
 
 
 
@@ -12,29 +16,21 @@ export default function Main() {
     <>
       <div className="battleground2">
         <div className="hero-text">
-          {/* <h1>Welcome To The PokeDexLer !</h1> */}
-          
-          {/* <h3>
-           
-            Have a look through our extensive and impressive pokedex, or better
-            yet go battle and brawl it our with you favourite pokemon !{" "}
-          </h3> */}
+    
         </div>
 
-        <div className="box">
-          <div className="block">
-            <div className="pie"></div> 
+    
+        <div className="main-block">
+          <div className="left1">        
+            <ChartOne />
           </div>
-          <div className="block">
-            <div className="doughnut"></div>
-          </div>
-          <div className="block">
-            <div className="bar"></div>
+        <div className="right1">
+            <ChartTwo/>
           </div>
         </div>
 
         <div className="show">
-           <ChartOne />
+           
         </div>
 
       </div>

@@ -2,19 +2,27 @@
     width: 85%;
     height: 100vh;
     float: right;
-    background-color: red;
+    background-color: rgb(245, 108, 108);
 }
 
 .Statement {
     width: 50%;
     height: 200px;
-    background-color: blue;
+    text-align: center;
     margin: auto;
+}
+
+.Statement h3 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
 }
 
 .TLine {
     width: 70%;
     height: 500px;
     margin: auto;
-    background-color: black;
+    background-color: rgb(49, 49, 49);
+
 }

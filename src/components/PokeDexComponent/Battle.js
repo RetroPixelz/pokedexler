@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Card from "./Card";
-
-
+import './Battle.css'
 import axios from "axios";
-import { Outlet } from "react-router-dom";
 
 export default function Battle(){
 
