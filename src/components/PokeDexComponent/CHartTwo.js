@@ -3,12 +3,10 @@ import 'chart.js/auto'
 import {Bar, bar, Doughnut} from 'react-chartjs-2'
 import './ChartOne.css'
 
-
-
-
-
-
 const ChartTwo = () => {
+
+    
+
     return(
         <div className="number2">
             <Doughnut data= {{

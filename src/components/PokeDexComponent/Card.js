@@ -3,24 +3,41 @@ import React from "react";
 import "./Pokedex.css";
 
 const PokeListItem = (props) => {
-  let pokemonURL = props.plink;
-  let baseURL =
-    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
-  let URLid = baseURL + props.id + ".png";
-
+  
   function showPoke() {
     axios.get(props.plink).then((Response) => {
-      console.log(Response);
+      
+
       let hp = document.getElementById("hp");
       let dmg = document.getElementById("dmg");
-
+      let atk = document.getElementById("atk");
+      let specatk = document.getElementById("spec-atk");
+      let specdef = document.getElementById("spec-def");
+      let speed = document.getElementById("speed");
       let imgURL = Response.data.sprites.front_default;
       let imgStyle = document.getElementById("imge");
 
-      hp.appendChild(document.createTextNode(Response.data.stats[0].base_stat));
-      dmg.appendChild(
-        document.createTextNode(Response.data.stats[1].base_stat)
-      );
+      let HP = Response.data.stats[0].base_stat;
+      let DMG = Response.data.stats[2].base_stat;
+      let ATK = Response.data.stats[1].base_stat;
+      let SPECATK = Response.data.stats[3].base_stat;
+      let SPECDEF = Response.data.stats[4].base_stat;
+      let SPEED = Response.data.stats[5].base_stat;
+     
+      let PokemonOne = [HP, DMG, ATK, SPECATK, SPECDEF, SPEED];
+      
+      localStorage.setItem("PokemonOne", PokemonOne)
+      
+
+     hp.innerHTML = `Health:  ` + Response.data.stats[0].base_stat;
+     dmg.innerHTML = `Damage:   ` +Response.data.stats[2].base_stat;
+     atk.innerHTML = `attack:  ` +Response.data.stats[1].base_stat;
+     specatk.innerHTML = `special-attack:   ` +Response.data.stats[3].base_stat;
+     specdef.innerHTML = `special-defence:   ` +Response.data.stats[4].base_stat;
+     speed.innerHTML = `speed:   ` +Response.data.stats[5].base_stat;
+
+
+      
 
       imgStyle.style.backgroundImage = "url(" + imgURL + ")";
       document.getElementById("imge").style.backgroundImage =
@@ -39,6 +56,8 @@ const PokeListItem = (props) => {
           {" "}
           <h3 id="bttn">{props.pname}</h3>{" "}
         </a>
+
+     
       </div>
     </>
   );

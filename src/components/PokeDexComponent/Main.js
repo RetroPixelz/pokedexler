@@ -1,10 +1,7 @@
 import React from "react";
-
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-
+import PokeDex from "./PokeDex";
 import ChartOne from "./ChartOne";
 import ChartTwo from "./CHartTwo";
-
 import './Main.css'
 
 
@@ -21,12 +18,13 @@ export default function Main() {
 
     
         <div className="main-block">
-          <div className="left1">        
+          <PokeDex />
+          {/* <div className="left1">        
             <ChartOne />
           </div>
         <div className="right1">
             <ChartTwo/>
-          </div>
+          </div> */}
         </div>
 
         <div className="show">
@@ -34,6 +32,7 @@ export default function Main() {
         </div>
 
       </div>
+     
     </>
   );
 }

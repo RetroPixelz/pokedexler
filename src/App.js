@@ -14,8 +14,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />}>
-            <Route path="/Main" element={<Main />} />
-            <Route path="/PokeDex" element={<PokeDex />} />
+            <Route path="/" element={<Main />} />
+            {/* <Route path="/PokeDex" element={<PokeDex />} /> */}
             <Route path="/Battle" element={<Battle />} />
             <Route path="/TimeLine" element={<TimeLine />} />
           </Route>

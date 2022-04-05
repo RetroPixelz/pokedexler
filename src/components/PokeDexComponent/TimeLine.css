@@ -1,8 +1,8 @@
 .Back {
     width: 85%;
-    height: 100vh;
+    height: 120vh;
     float: right;
-    background-color: rgb(245, 108, 108);
+    background-color: rgb(34, 34, 34);
 }
 
 .Statement {
@@ -16,8 +16,102 @@
     margin-top: 20px;
     text-align: center;
     font-size: 40px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
+
+.container {
+    height: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    }
+
+.bit:nth-child(1) {
+    border: 1px;
+    background-color: rgb(39, 39, 39);
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    box-shadow: inset 0 0 0 0 #CF9239;
+    color: white;
+    transition: color .45s ease-in-out, box-shadow .45s ease-in-out;
+    }
+    
+    
+    .bit:hover{
+        box-shadow: inset 200px 0 0 0 #CF9239;
+        color: white; 
+    }
+
+.bit:nth-child(2) {
+    border: 1px;
+    background-color: rgb(39, 39, 39);
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    box-shadow: inset 0 0 0 0 #CF9239;
+    color: white;
+    transition: color .45s ease-in-out, box-shadow .45s ease-in-out;
+    }
+    
+    
+
+.bit:nth-child(3) {
+    border: 1px;
+    background-color: rgb(39, 39, 39);
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    box-shadow: inset 0 0 0 0 #CF9239;
+    color: white;
+    transition: color .45s ease-in-out, box-shadow .45s ease-in-out;
+    }
+
+.bit:nth-child(4) {
+    border: 1px;
+    background-color: rgb(39, 39, 39);
+    width: 100px;
+    margin: 20px;
+    height: 50px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    box-shadow: inset 0 0 0 0 #CF9239;
+    color: white;
+    transition: color .45s ease-in-out, box-shadow .45s ease-in-out;
+    }
+
+.bit:nth-child(5) {
+    border: 1px;
+    background-color: rgb(39, 39, 39);
+    width: 100px;
+    margin: 20px;
+    height: 50px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    box-shadow: inset 0 0 0 0 #CF9239;
+    color: white;
+    transition: color .45s ease-in-out, box-shadow .45s ease-in-out;
+    }
+
+    .bit:hover{
+        box-shadow: inset 200px 0 0 0 rgb(200 16 46);
+        color: white; 
+    }
 
 .TLine {
     width: 70%;

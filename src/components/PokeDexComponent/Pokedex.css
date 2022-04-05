@@ -7,7 +7,7 @@ h1 {
     font-size: 50px;
     margin: 5px;
 }
-
+/* 
 .background {
   background-attachment: fixed;
   float: right;
@@ -15,14 +15,10 @@ h1 {
   height: 120vh;
   background-color: rgb(122, 0, 0);
   background-image: url(./background-1.png);
-}
+} */
 
 
-.hero-text2 {
-  width: 80%;
-  height: 100px;
-  margin: auto;
-}
+
 
   h1{
     font-size: 50px;
@@ -52,7 +48,7 @@ h1 {
 .poke-list {
     background-color: lightblue;
     width: 80%;
-    height: 600px;
+    height: 500px;
     margin: auto;
     margin-top: 100px;
     border: 5px solid black;
@@ -84,6 +80,8 @@ h1 {
     
 }
 
+
+
 #bttn h3 {
     font-size: 20px;
 }
@@ -95,10 +93,9 @@ h1 {
 
 
 .block-1 {
-
   margin: auto;
-  width: 95%;
-  height: 750px;
+  width: 70%;
+  height: 650px;
   background-color: red;
   border: 5px solid black;
 
@@ -107,7 +104,7 @@ h1 {
 
 .left-section {
   width: 48%;
-  height: 750px;
+  height: 650px;
   float: left;
   background-color: red;
   
@@ -146,18 +143,18 @@ h1 {
 .screen {
   background-color: lightblue;
   width: 80%;
-  height: 600px;
+  height: 500px;
   margin: auto;
   margin-top: 70px;
   border: 5px solid black;
 }
 
 .sprite {
-  width: 60%;
-  height: 300px;
+  width: 80%;
+  height: 250px;
   background-color: lightblue;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   border: 5px solid black;
   background-size: 90% 100%; 
   background-repeat: no-repeat;
@@ -179,7 +176,7 @@ h1 {
 
 .right-section {
   width: 49.5%;
-  height: 750px;
+  height: 650px;
   float: right;
   background-color: red;
   border-left: 5px solid black;

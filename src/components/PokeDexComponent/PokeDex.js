@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { Outlet } from "react-router-dom";
 import axios from "axios";
 import Card from "./Card";
 
@@ -10,13 +9,14 @@ import { useState, useEffect } from "react";
 const PokeDex = () => {
 
   const [genPokeListItem, setgenPokeListItem] = useState([]);
+  
 
   useEffect(() => {
     axios
       .get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=100")
       .then((response) => {
         let pokemons = response.data.results;
-
+        
         const pokeData = [];
 
         for (let i = 0; i < pokemons.length; i++) {
@@ -29,6 +29,10 @@ const PokeDex = () => {
         let startItem = pokeData.map((item) => <Card pname={item.name}  plink={item.url}/>);
         setgenPokeListItem(startItem);
         console.log(pokeData);
+       
+
+
+        
 
       });
 
@@ -149,11 +153,8 @@ const PokeDex = () => {
 
   return (
     <>
-      <div className="background">
-        <div className="hero-text2">
-          <h1>HAVE A LOOK AT YOUR POKEDEX</h1>
-        </div>
-
+      
+      
         <div className="block-1">
           <div className="left-section">
             <button className="btn1"></button>
@@ -166,9 +167,12 @@ const PokeDex = () => {
               </div>
 
               <div className="information">
-                <h4> Health: <h4 id="hp"></h4>  </h4> 
-                <h4> Damage: <h4 id="dmg"></h4> </h4>
-                
+                <h3 id="hp"> Health: </h3> 
+                <h3 id="dmg"> Damage: </h3>
+                <h3 id="atk"> Attack: </h3>
+                <h3 id="spec-atk"> Special-attack: </h3>
+                <h3 id="spec-def"> Special-defence: </h3>
+                <h3 id="speed"> Speed: </h3>
               </div>
             </div>
           </div>
@@ -180,8 +184,8 @@ const PokeDex = () => {
             </div>
           </div>
         </div>
-      </div>
-      <Outlet />
+      
+      
     </>
   );
 };

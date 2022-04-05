@@ -1,14 +1,49 @@
 import react from 'react';
 import {Bar, bar, Line} from 'react-chartjs-2'
 import './TimeLine.css'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+
+
 
 
 const TimeLine = () => {
+
+    useEffect(() => {
+        axios.get("https://pokeapi.co/api/v2/growth-rate/4")
+            .then((res) => {
+                console.log(res)
+        
+                
+                // console.log(triggers)
+        
+                // let triggerAmount = triggercount.map((item) =>  < sdfg/>);
+                // setGetTriggerCount(triggerAmount)
+        
+        
+        
+                // let startItem = pokeData.map((item) => <Card pname={item.name}  plink={item.url}/>);
+                // setgenPokeListItem(startItem);
+                // console.log(pokeData);
+                // let gen = res.data.pokemon_species
+        
+                // console.log(gen)
+            })
+        })
+
     return(
 <>
 <div className="Back">
         <div className="Statement">
             <h3>Here is a timeline of the generations of pokemon game releases</h3>
+        </div>
+       
+        <div className='container'>
+            <button className='bit'> Line 1</button>
+            <button className='bit'> Line 1</button>
+            <button className='bit'> Line 1</button>
+            <button className='bit'> Line 1</button>
+            <button className='bit'> Line 1</button>
         </div>
         <div className="TLine">
         <Line data= {{
