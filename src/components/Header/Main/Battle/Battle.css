@@ -1,69 +1,55 @@
 .battleground {
-    background-image: url(../PokeDexComponent/BattleGround.jpg);
+    background-image: url(../img/BattleGround.jpg);
     background-attachment: fixed;
     float: right;
     width: 85%;
     height: 120vh;
 }
 
-.row-1 {
-    width: 100%;
-    height: 100px;
-    
-    padding-top: 20px;
-}
+  
 
-.left {
-    width: 40%;
-    height: 50px;
-    float: left;
-    
-    
-}
-
-#first {
-    width: 100%;
-    height: 100%;
-   
-}
-
-.select1{
-    width: 50%;
-    height: 100%;
-    background-color: white;
-    border: 5px solid black;
-    margin: auto;
-    overflow: scroll;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
-
-}
-.select1::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-}
-
-
-
-a {
-    text-decoration: none;
-    color: #000000;
+ .selectors {
+   margin-top: 50px;
+   height: 100px;
+   width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
   }
+
+.sel:nth-child(1) {
+  margin-right: 180px;
+  width: 300px;
+  height: 50px;
   
-  a:hover {
-    color: #222222
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
   }
+
+.sel:nth-child(2) {
+  margin-left: 180px;
+  width: 300px;
+  height: 50px;
   
-  /* Dropdown */
-  
-  .dropdown {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  }
+
+
+.dropdown {
     width: 250px;
     display: inline-block;
     position: relative;
   }
   
   .dd-button {
-    width: 200px;
+    width: 100%;
     display: inline-block;
     border: 1px solid gray;
     border-radius: 4px;
@@ -77,7 +63,7 @@ a {
     content: '';
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: -40px;
     transform: translateY(-50%);
     width: 0; 
     height: 0; 
@@ -96,7 +82,7 @@ a {
   }
   
   .dd-menu {
-    width: 200px;
+    width: 120%;
     position: absolute;
     top: 100%;
     border: 1px solid #3c5aa6;
@@ -108,6 +94,8 @@ a {
     list-style-type: none;
     height: 250px;
     overflow: scroll;
+  overflow-x: hidden;
+
   }
   
   .dd-input + .dd-menu {
@@ -146,27 +134,14 @@ a {
 
 
 
-.right {
-    width: 40%;
-    height: 50px;
-    float: right;
-    
+body {
+  background: #ece5da;
+  font-family: 'Raleway', sans-serif;
 }
 
-.select2 {
-    width: 50%;
-    height: 100%;
-    background-color: white;
-    border: 5px solid black;
-    margin: auto;
-    overflow: scroll;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
-}
-.select2::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-}
+
+
+
 
 
 #second{
@@ -181,7 +156,7 @@ a {
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0px;
     width: 100%;
     height: 600px;
     
@@ -191,7 +166,7 @@ a {
     margin-right: 50px;
     width: 350px;
     height: 80%;
-    background-image: url(./Card.png);
+    background-image: url(../img/Card.png);
     border-radius: 15px;
     order: 0;
     flex: 0 1 auto;
@@ -221,7 +196,7 @@ a {
 }
 
 .flex-item:nth-child(2) {
-    width: 350px;
+    width: 200px;
     height: 80%;
     
     order: 0;
@@ -229,14 +204,19 @@ a {
     align-self: flex-end;
     }
 
-    #fight h2 {
+    #fight h5 {
+      border-radius: 25px;
+      margin-top: 20px;
+      border: 1px solid white;
+      background-color: rgb(172, 172, 172);
         font-size: 40px;
-        margin-left: 125px;
-        color: black;
+       text-align: center;
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
     }
 
 .vs {
-    background-image: url(./pokeball.png);
+    background-image: url(../img/pokeball.png);
     background-size: 100% 100%;
     width: 100px;
     height: 100px;
@@ -256,7 +236,7 @@ a {
     margin-left: 50px;
     width: 350px;
     height: 80%;
-    background-image: url(./Card.png);
+    background-image: url(../img/Card.png);
     border-radius: 15px;
     order: 0;
     flex: 0 1 auto;

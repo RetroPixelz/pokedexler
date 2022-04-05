@@ -6,18 +6,18 @@
 .battleground2 {
   width: calc(85%);
   float: right;
-  height: 200vh;
+  height: 100vh;
   background-color: rgba(37, 189, 176, 0.644);
-  background-image: url("./background.jpg");
+  background-image: url(./img/background.jpg);
   background-attachment: fixed;
 }
 
 .hero-text {
-  width: 50%;
-  height: 220px;
+  width: 40%;
+  height: 180px;
   margin: auto;
   text-align: center;
-  background-image: url(../PokeDexComponent/PokeMonLogo.png);
+  background-image: url(./img/PokeMonLogo.png);
   background-size: 100% 100%;
 }
 
@@ -53,7 +53,7 @@ h3 {
   margin-top: 80px;
   width: 50%;
   height: 50%;
-  background-image: url(../PokeDexComponent/PIE.png);
+ 
   background-size: 100% 100%;
 }
 
@@ -70,7 +70,7 @@ h3 {
   margin-top: 80px;
   width: 50%;
   height: 50%;
-  background-image: url(../PokeDexComponent/DOUGHNUT.png);
+ 
   background-size: 100% 100%;
 }
 
@@ -87,7 +87,7 @@ h3 {
   margin-top: 80px;
   width: 50%;
   height: 50%;
-  background-image: url(../PokeDexComponent/BAR.png);
+  
   background-size: 100% 100%;
 }
 
