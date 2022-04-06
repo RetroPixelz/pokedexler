@@ -5,6 +5,7 @@ import Card from "../../../Card";
 import PokeListItem2 from "../../../BattleCard";
 import ChartOne from "../../../ChartOne";
 
+
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -15,6 +16,7 @@ import {
   Legend,
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
+import { useOutletContext } from "react-router-dom";
 
 ChartJS.register(
   RadialLinearScale,
@@ -26,22 +28,29 @@ ChartJS.register(
 );
 
 export default function Battle() {
+  const pokedata = useOutletContext();
+  console.log(pokedata)
+
   const [genPokeListItem, setgenPokeListItem] = useState([]);
   const [genPokeListItem2, setgenPokeListItem2] = useState([]);
   const [pokemonstats, setPokeStats] = useState([]);
 
-  const data = {
-    labels: ["hp", "dmg", "atk", "special attack", "special deffence", "speed"],
-    datasets: [
-      {
-        label: "# of Votes",
-        data: pokemonstats,
-        backgroundColor: "rgba(255, 99, 132, 0.2)",
-        borderColor: "rgba(255, 99, 132, 1)",
-        borderWidth: 1,
-      },
-    ],
-  };
+  useEffect(() => {
+
+  })
+
+  // const data = {
+  //   labels: ["hp", "dmg", "atk", "special attack", "special deffence", "speed"],
+  //   datasets: [
+  //     {
+  //       label: "# of Votes",
+  //       data: pokemonstats,
+  //       backgroundColor: "rgba(255, 99, 132, 0.2)",
+  //       borderColor: "rgba(255, 99, 132, 1)",
+  //       borderWidth: 1,
+  //     },
+  //   ],
+  // }; 
 
   // useEffect(() => {
   //   axios
@@ -85,24 +94,24 @@ export default function Battle() {
       <div className="battleground">
         <div className="selectors">
           <div className="sel">
-            <label class="dropdown">
-              <div class="dd-button">Select a Pokemon</div>
+            <label className="dropdown">
+              <div className="dd-button">Select a Pokemon</div>
 
-              <input type="checkbox" class="dd-input" id="test" />
+              <input type="checkbox" className="dd-input" id="test" />
 
-              <ul class="dd-menu">
-                <li></li>
+              <ul className="dd-menu">
+                <li> {genPokeListItem} </li>
               </ul>
             </label>
           </div>
 
           <div className="sel">
-            <label class="dropdown">
-              <div class="dd-button">Select a Pokemon</div>
+            <label className="dropdown">
+              <div className="dd-button">Select a Pokemon</div>
 
-              <input type="checkbox" class="dd-input" id="test" />
+              <input type="checkbox" className="dd-input" id="test" />
 
-              <ul class="dd-menu">
+              <ul className="dd-menu">
                 <li>{genPokeListItem2}</li>
               </ul>
             </label>
@@ -110,24 +119,24 @@ export default function Battle() {
         </div>
         {/* <div className="row-1">
           
-          <label class="dropdown">
-            <div class="dd-button">Select a Pokemon</div>
+          <label className="dropdown">
+            <div className="dd-button">Select a Pokemon</div>
 
-            <input type="checkbox" class="dd-input" id="test" />
+            <input type="checkbox" className="dd-input" id="test" />
 
-            <ul class="dd-menu">
+            <ul className="dd-menu">
               <li>{genPokeListItem}</li>
             </ul>
           </label>
 
           <div className="right">
            
-            <label class="dropdown">
-              <div class="dd-button">Select a Pokemon</div>
+            <label className="dropdown">
+              <div className="dd-button">Select a Pokemon</div>
 
-              <input type="checkbox" class="dd-input" id="test" />
+              <input type="checkbox" className="dd-input" id="test" />
 
-              <ul class="dd-menu">
+              <ul className="dd-menu">
                 <li>{genPokeListItem2}</li>
               </ul>
             </label>
@@ -162,7 +171,7 @@ export default function Battle() {
           </div>
         </div>
         <div className="row-3">
-          <Radar data={data} options={{ maintainAspectRatio: false }} />
+          {/* <Radar data={data} options={{ maintainAspectRatio: false }} /> */}
         </div>
       </div>
     </>
