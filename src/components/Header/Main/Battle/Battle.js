@@ -4,6 +4,9 @@ import axios from "axios";
 import Card from "../../../Card";
 import PokeListItem2 from "../../../BattleCard";
 import ChartOne from "../../../ChartOne";
+import { useOutletContext } from "react-router-dom";
+import pokemonList from '../PokeDex/pokemonList/PokemonList'
+
 
 import {
   Chart as ChartJS,
@@ -15,6 +18,7 @@ import {
   Legend,
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
+import { BattleNamesList } from "./BattleCardNamesList/BattleNamesList";
 
 ChartJS.register(
   RadialLinearScale,
@@ -25,7 +29,23 @@ ChartJS.register(
   Legend
 );
 
-export default function Battle() {
+export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
+
+
+  
+// console.log(pokemonDataBase)
+
+//   const data = useOutletContext();
+  
+// const [BattlepokeCard, setbattlePokecard] = useState([]);
+
+// function onclickPokemonHandler(event) {
+//   let BattlepokeCard = pokemonDataBase.find(i => i.name === event.target.innerHTML.toLowerCase());
+//   setbattlePokecard(BattlepokeCard)
+// }
+// console.log(BattlepokeCard)
+
+
   const [genPokeListItem, setgenPokeListItem] = useState([]);
   const [genPokeListItem2, setgenPokeListItem2] = useState([]);
   const [pokemonstats, setPokeStats] = useState([]);
@@ -43,66 +63,68 @@ export default function Battle() {
     ],
   };
 
-  // useEffect(() => {
-  //   axios
-  //     .get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=100")
-  //     .then((response) => {
-  //       let pokemons = response.data.results;
-  //       const pokeData = [];
-  //       for (let i = 0; i < pokemons.length; i++) {
-  //         pokeData.push({
-  //           name: pokemons[i].name,
-  //           url: pokemons[i].url,
-  //         });
-  //       }
-  //       let startItem = pokeData.map((item) => (
-  //         <Card pname={item.name} plink={item.url} />
-  //       ));
-  //       setgenPokeListItem(startItem);
-  //     });
-  //   axios
-  //     .get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=100")
-  //     .then((response) => {
-  //       let pokemons = response.data.results;
-  //       const pokeData2 = [];
-  //       for (let i = 0; i < pokemons.length; i++) {
-  //         pokeData2.push({
-  //           name: pokemons[i].name,
-  //           url: pokemons[i].url,
-  //         });
-  //       }
-  //       let battleItem = pokeData2.map((item) => (
-  //         <PokeListItem2 pname={item.name} plink={item.url} />
-  //       ));
-  //       setgenPokeListItem2(battleItem);
-  //     });
-  //     setPokeStats(localStorage.getItem("PokemonOne"));
-  //     console.log(setPokeStats)
-  // }, []);
+  useEffect(() => {
+    axios
+      .get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=100")
+      .then((response) => {
+        let pokemons = response.data.results;
+        const pokeData = [];
+        for (let i = 0; i < pokemons.length; i++) {
+          pokeData.push({
+            name: pokemons[i].name,
+            url: pokemons[i].url,
+          });
+        }
+        let startItem = pokeData.map((item) => (
+          <Card pname={item.name} plink={item.url} />
+        ));
+        setgenPokeListItem(startItem);
+      });
+    axios
+      .get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=100")
+      .then((response) => {
+        let pokemons = response.data.results;
+        const pokeData2 = [];
+        for (let i = 0; i < pokemons.length; i++) {
+          pokeData2.push({
+            name: pokemons[i].name,
+            url: pokemons[i].url,
+          });
+        }
+        let battleItem = pokeData2.map((item) => (
+          <PokeListItem2 pname={item.name} plink={item.url} />
+        ));
+        setgenPokeListItem2(battleItem);
+      });
+      setPokeStats(localStorage.getItem("PokemonOne"));
+      console.log(setPokeStats)
+  }, []);
 
   return (
     <>
       <div className="battleground">
         <div className="selectors">
           <div className="sel">
-            <label class="dropdown">
-              <div class="dd-button">Select a Pokemon</div>
+            <label className="dropdown">
+              <div className="dd-button">Select a Pokemon</div>
 
-              <input type="checkbox" class="dd-input" id="test" />
+              <input type="checkbox" className="dd-input" id="test" />
 
-              <ul class="dd-menu">
-                <li></li>
+              <ul className="dd-menu">
+
+                <li>{genPokeListItem}</li>
+                {/* <li>  <BattleNamesList data={pokemonDataBaseNamesList} onClick={onclickPokemonHandler}/>  </li> */}
               </ul>
             </label>
           </div>
 
           <div className="sel">
-            <label class="dropdown">
-              <div class="dd-button">Select a Pokemon</div>
+            <label className="dropdown">
+              <div className="dd-button">Select a Pokemon</div>
 
-              <input type="checkbox" class="dd-input" id="test" />
+              <input type="checkbox" className="dd-input" id="test" />
 
-              <ul class="dd-menu">
+              <ul className="dd-menu">
                 <li>{genPokeListItem2}</li>
               </ul>
             </label>

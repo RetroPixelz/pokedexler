@@ -1,6 +1,5 @@
 import React from "react";
 import PokeDex from "../Main/PokeDex/PokeDex";
-
 import './Main.css'
 import { useOutletContext } from "react-router-dom";
 

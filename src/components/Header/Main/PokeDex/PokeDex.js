@@ -6,12 +6,11 @@ import { PokemonList } from "./pokemonList/PokemonList";
 import { PokemonStatsCard } from "./pokemonStatsCard/PokemonStatsCard";
 
 const PokeDex = ({ pokemonDataBaseNamesList, pokemonDataBase }) => {
-  
+
 
   const [pokemonChosen, setPokemonChosen] = useState();
 
-  function onclickPokemonHandler(event){
-
+  function onclickPokemonHandler(event) {
     let pokemonChosen = pokemonDataBase.find(i => i.name === event.target.innerHTML.toLowerCase());
     setPokemonChosen(pokemonChosen)
   }
@@ -24,9 +23,9 @@ const PokeDex = ({ pokemonDataBaseNamesList, pokemonDataBase }) => {
           <button className="btn1"></button>
           <button className="btn2"></button>
           <button className="btn3"></button>
-          <PokemonStatsCard pokemonChosen={pokemonChosen}/>
+          <PokemonStatsCard pokemonChosen={pokemonChosen} />
         </div>
-        
+
         <div className="right-section">
           <div className="poke-list">
             <PokemonList data={pokemonDataBaseNamesList} onClick={onclickPokemonHandler} />
