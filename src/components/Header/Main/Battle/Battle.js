@@ -4,7 +4,7 @@ import axios from "axios";
 import Card from "../../../Card";
 import PokeListItem2 from "../../../BattleCard";
 import ChartOne from "../../../ChartOne";
-import { useOutletContext } from "react-router-dom";
+
 import pokemonList from '../PokeDex/pokemonList/PokemonList'
 
 
@@ -31,7 +31,7 @@ ChartJS.register(
   Legend
 );
 
-export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
+
 
 
   
@@ -47,9 +47,10 @@ export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
 // }
 // console.log(BattlepokeCard)
 
-export default function Battle() {
+export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase }) {
   const pokedata = useOutletContext();
-  console.log(pokedata)
+  // console.log(pokedata)
+  console.log(pokedata.pokemonDataBase)
 
   const [genPokeListItem, setgenPokeListItem] = useState([]);
   const [genPokeListItem2, setgenPokeListItem2] = useState([]);
@@ -122,8 +123,9 @@ export default function Battle() {
               <ul className="dd-menu">
 
                 <li>{genPokeListItem}</li>
-                {/* <li>  <BattleNamesList data={pokemonDataBaseNamesList} onClick={onclickPokemonHandler}/>  </li> */}
-                <li> {genPokeListItem} </li>
+
+                <li>  <BattleNamesList data={pokedata.pokemonDataBaseNamesList} /></li>
+                
               </ul>
             </label>
           </div>
@@ -135,36 +137,14 @@ export default function Battle() {
               <input type="checkbox" className="dd-input" id="test" />
 
               <ul className="dd-menu">
+
                 <li>{genPokeListItem2}</li>
+
               </ul>
             </label>
           </div>
         </div>
-        {/* <div className="row-1">
-          
-          <label className="dropdown">
-            <div className="dd-button">Select a Pokemon</div>
-
-            <input type="checkbox" className="dd-input" id="test" />
-
-            <ul className="dd-menu">
-              <li>{genPokeListItem}</li>
-            </ul>
-          </label>
-
-          <div className="right">
-           
-            <label className="dropdown">
-              <div className="dd-button">Select a Pokemon</div>
-
-              <input type="checkbox" className="dd-input" id="test" />
-
-              <ul className="dd-menu">
-                <li>{genPokeListItem2}</li>
-              </ul>
-            </label>
-          </div>
-        </div> */}
+        
         <div className="flex-container">
           <div className="flex-item">
             <div className="pokemon-1" id="imge"></div>
@@ -194,6 +174,13 @@ export default function Battle() {
           </div>
         </div>
         <div className="row-3">
+          <div className="charts">
+
+          </div>
+          <div className="charts">
+
+          </div>
+
           {/* <Radar data={data} options={{ maintainAspectRatio: false }} /> */}
         </div>
       </div>

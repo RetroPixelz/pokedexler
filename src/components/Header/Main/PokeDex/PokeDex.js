@@ -7,7 +7,7 @@ import { PokemonStatsCard } from "./pokemonStatsCard/PokemonStatsCard";
 
 const PokeDex = ({ pokemonDataBaseNamesList, pokemonDataBase }) => {
 
-
+  
   const [pokemonChosen, setPokemonChosen] = useState();
 
   function onclickPokemonHandler(event) {
