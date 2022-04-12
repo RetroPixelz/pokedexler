@@ -36,7 +36,7 @@ const PokeListItem = (props) => {
      specdef.innerHTML = `special-defence:   ` +Response.data.stats[4].base_stat;
      speed.innerHTML = `speed:   ` +Response.data.stats[5].base_stat;
 
-
+     
       
 
       imgStyle.style.backgroundImage = "url(" + imgURL + ")";

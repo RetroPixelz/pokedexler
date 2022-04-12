@@ -265,20 +265,7 @@ body {
   }
 
 
-/* .row-3 {
-  margin: auto;
-    margin-top: 50px;
-    width: 400px;
-    height: 400px;
-  background-color: rgb(59, 59, 59);    
-  border-radius: 25px;
-} 
 
-
-
-#first {
-    color: black;
-} */
 
 
 
@@ -298,9 +285,11 @@ body {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  width: 50%;
-  height: 100%;
-  background-color: green;
+  width: 45%;
+  margin: 10px;
+  height: 90%;
+  background-color: rgb(71, 71, 71);
+  border-radius: 20px;
   }
 
 .charts:nth-child(2) {
@@ -308,7 +297,10 @@ body {
   flex: 0 1 auto;
   align-self: auto;
   width: 50%;
-  height: 100%;
-  background-color: rgb(0, 2, 128);
+  height: 90%;
+  margin: 10px;
+
+  background-color: rgb(71, 71, 71);
+  border-radius: 20px;
   }
 

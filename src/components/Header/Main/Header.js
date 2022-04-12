@@ -49,7 +49,7 @@ export default function Header() {
           </li>
           <li>
             <Link to="/Battle">
-              <h2>Battle</h2>
+              <h2>Compare</h2>
             </Link>
           </li>
           <li>
