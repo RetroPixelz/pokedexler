@@ -3,15 +3,13 @@ import React from "react";
 
 
 const PokeListItem2 = (props) => {
-  let pokemonURL = props.plink;
-  let baseURL =
-    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
+  let baseURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
   let URLid = baseURL + props.id + ".png";
 
   function showPoke2() {
     axios.get(props.plink).then((Response) => {
 
-      localStorage.setItem("pokemonTwo", Response )
+      // localStorage.setItem("pokemonTwo", Response )
 
       let hp2 = document.getElementById("hp2");
       let dmg2 = document.getElementById("dmg2");
@@ -31,10 +29,9 @@ const PokeListItem2 = (props) => {
      
       let PokemonTwo = [HP, DMG, ATK, SPECATK, SPECDEF, SPEED];
       
-      localStorage.setItem("PokemonTwo", PokemonTwo)
-      console.log(PokemonTwo)
+      // localStorage.setItem("PokemonTwo", PokemonTwo)
+      // console.log(PokemonTwo)
       
-
      hp2.innerHTML = `Health:` + Response.data.stats[0].base_stat;
      dmg2.innerHTML = `Defence:` + Response.data.stats[2].base_stat;
      atk2.innerHTML = `attack:  ` +Response.data.stats[1].base_stat;

@@ -48,20 +48,15 @@ ChartJS.register(
 );
 
 
-
-
-export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase, props }) {
+export default function Battle({props }) {
   const pokedata = useOutletContext();
-  
-  
 
   const [genPokeListItem, setgenPokeListItem] = useState([]);
   const [genPokeListItem2, setgenPokeListItem2] = useState([]);
+
   const [pokeStats, setPokeStats] = useState([]);
+  const [pokeStats2, setPokeStats2] = useState([]);
 
-
-  
- 
   const options = {
     responsive: true,
     plugins: {
@@ -77,25 +72,9 @@ export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase, prop
 
   const labels = ['Health', 'Damage', 'attack', 'special-attack', 'special-defence', 'speed'];
 
-  const data = {
-    labels,
-    datasets: [
-      {
-        label: 'Dataset 1',
-        data: 12,
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      },
-      {
-        label: 'Dataset 2',
-        data: 11,
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      },
-    ],
-  };
-  console.log()
-
-
   
+
+
 
   useEffect(() => {
     axios
@@ -109,9 +88,9 @@ export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase, prop
             url: pokemons[i].url,
           });
         }
-        let startItem = pokeData.map((item) => (
-          <Card pname={item.name} plink={item.url} />
-        ));
+          let startItem = pokeData.map((item) => (
+            <Card pname={item.name} plink={item.url} />
+          ));
         setgenPokeListItem(startItem);
       });
 
@@ -131,10 +110,27 @@ export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase, prop
         ));
         setgenPokeListItem2(battleItem);
       });
-      setPokeStats(localStorage.getItem("PokemonOne"));
-      console.log(setPokeStats)
+      setPokeStats(localStorage.getItem("PokemonOne").split(','));
+      setPokeStats2(localStorage.getItem("PokemonTwo").split(','));
   }, []);
 
+
+
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: 'PokemonOne',
+        data: pokeStats,
+        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+      },
+      {
+        label: 'PokemonTwo',
+        data: pokeStats2,
+        backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      },
+    ],
+  };
   
   
 
@@ -150,9 +146,14 @@ export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase, prop
 
               <ul className="dd-menu">
 
-                <li>{genPokeListItem}</li>
-
-                
+              {/* <a
+          onClick={() => {
+            showPoke();
+          }}
+        >
+          <h3 id="bttn">{props.pname}</h3>
+        </a> */}
+        <li>{genPokeListItem}</li>
                 
               </ul>
             </label>
@@ -176,6 +177,7 @@ export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase, prop
         <div className="flex-container">
           <div className="flex-item">
             <div className="pokemon-1" id="imge"></div>
+            
             <div className="stats-1">
               <h3 id="hp"> Health: </h3>
               <h3 id="dmg"> Damage: </h3>

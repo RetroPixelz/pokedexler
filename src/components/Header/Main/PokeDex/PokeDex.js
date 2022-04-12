@@ -14,7 +14,7 @@ const PokeDex = ({ pokemonDataBaseNamesList, pokemonDataBase }) => {
     let pokemonChosen = pokemonDataBase.find(i => i.name === event.target.innerHTML.toLowerCase());
     setPokemonChosen(pokemonChosen)
   }
-  console.log(pokemonChosen)
+  
 
   return (
     <>

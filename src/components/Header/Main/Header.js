@@ -43,17 +43,17 @@ export default function Header() {
         <div className="logo"> </div>
         <ul className="nav">
           <li>
-            <Link to="/">
+            <Link className="anchortag" to="/">
               <h2>Home</h2>
             </Link>
           </li>
           <li>
-            <Link to="/Battle">
+            <Link className="anchortag" to="/Battle">
               <h2>Compare</h2>
             </Link>
           </li>
           <li>
-            <Link to="/TimeLine">
+            <Link className="anchortag" to="/TimeLine">
               <h2>TimeLine</h2>{" "}
             </Link>
           </li>

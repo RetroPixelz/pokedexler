@@ -1,13 +1,14 @@
 .nav-container {
   width: 15%;
-  height: 150vh;
+  height: 100vh;
   background-color: rgb(54, 54, 54);
   float: left;
+  position: fixed;
 }
 
 .nav {
   width: 25%;
-  height: 100vh;
+  
   margin-left: 25px;
 }
 .item {
@@ -68,4 +69,7 @@ h2:hover {
   
 }
 
+.anchortag {
+  text-decoration: none;
+}
 

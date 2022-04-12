@@ -2,12 +2,11 @@ import axios from "axios";
 import React from "react";
 
 
-const PokeListItem = (props) => {
+const Card = (props) => {
   
   function showPoke() {
     axios.get(props.plink).then((Response) => {
       
-
       let hp = document.getElementById("hp");
       let dmg = document.getElementById("dmg");
       let atk = document.getElementById("atk");
@@ -24,11 +23,11 @@ const PokeListItem = (props) => {
       let SPECDEF = Response.data.stats[4].base_stat;
       let SPEED = Response.data.stats[5].base_stat;
      
+
+
       let PokemonOne = [HP, DMG, ATK, SPECATK, SPECDEF, SPEED];
-      
       localStorage.setItem("PokemonOne", PokemonOne)
       
-
      hp.innerHTML = `Health:  ` + Response.data.stats[0].base_stat;
      dmg.innerHTML = `Damage:   ` +Response.data.stats[2].base_stat;
      atk.innerHTML = `attack:  ` +Response.data.stats[1].base_stat;
@@ -36,12 +35,11 @@ const PokeListItem = (props) => {
      specdef.innerHTML = `special-defence:   ` +Response.data.stats[4].base_stat;
      speed.innerHTML = `speed:   ` +Response.data.stats[5].base_stat;
 
-     
-      
-
       imgStyle.style.backgroundImage = "url(" + imgURL + ")";
       document.getElementById("imge").style.backgroundImage =
         "'url(" + Response.data.sprites.front_default.url + ")'";
+
+        const PokemonOne =
     });
   }
 
@@ -53,8 +51,7 @@ const PokeListItem = (props) => {
             showPoke();
           }}
         >
-          {" "}
-          <h3 id="bttn">{props.pname}</h3>{" "}
+          <h3 id="bttn">{props.pname}</h3>
         </a>
 
      
@@ -63,4 +60,4 @@ const PokeListItem = (props) => {
   );
 };
 
-export default PokeListItem;
+export default Card;
