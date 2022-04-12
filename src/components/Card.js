@@ -39,7 +39,7 @@ const Card = (props) => {
       document.getElementById("imge").style.backgroundImage =
         "'url(" + Response.data.sprites.front_default.url + ")'";
 
-        const PokemonOne =
+        
     });
   }
 

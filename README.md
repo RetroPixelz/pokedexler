@@ -10,14 +10,14 @@
 
 
 <!-- HEADER SECTION -->
-<h5 align="center" style="padding:0;margin:0;">Mike Maynard</h5>
-<h5 align="center" style="padding:0;margin:0;">110185</h5>
+<h5 align="center" style="padding:0;margin:0;">Justin Koster</h5>
+<h5 align="center" style="padding:0;margin:0;">200100</h5>
 <h6 align="center">DV200 - Term 1 | 2022</h6>
 </br>
 <p align="center">
 
   <a href="https://github.com/MikeMaynard14/termoneexample">
-    <img src="src/assets/mascot.svg" alt="Logo" width="140" height="140">
+    <img src="https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/LOGO.gif" alt="Logo" width="140" height="140">
   </a>
   
   <h3 align="center">OpenSpace</h3>
@@ -204,8 +204,8 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-* Future 1.
-* Future 2.
+* some functionality imrovements i can make in the future is to change the styling of the pokedex to have a bit more animationin, maybe add a rotating image where the pokemon sprite is displayed.
+* another feature i can add in the future is to make that the two pokemon actually fight and there is a declared winner, as now they are only being compared.
 
 <!-- MOCKUPS -->
 ## Final Outcome
@@ -224,12 +224,12 @@ To see a run through of the application, click below:
 [View Demonstration](path/to/video/demonstration)
 
 
-See the [open issues](https://github.com/MikeMaynard14/termoneexample/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Justin-OwiStudent/pokedexler/issues) for a list of proposed features (and known issues).
 
 <!-- AUTHORS -->
 ## Authors
 
-* **Your Name & Surname** - [MikeMaynard14](https://github.com/MikeMaynard14)
+* **Justin Koster** - [Justin-Owistudent](https://github.com/Justin-OwiStudent/pokedexler)
 
 <!-- LICENSE -->
 ## License
@@ -239,8 +239,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **Your Name & Surname** - [email@address](mailto:email@address) - [@instagram_handle](https://www.instagram.com/instagram_handle/) 
-* **Project Link** - https://github.com/MikeMaynard14/termoneexample
+* **Justin Koster** - [email@address](200100@virtualwindow.co.za)  
+* **Project Link** - https://github.com/Justin-OwiStudent/pokedexler
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements

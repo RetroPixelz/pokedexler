@@ -3,7 +3,11 @@ import "./Battle.css";
 import axios from "axios";
 import Card from "../../../Card";
 import PokeListItem2 from "../../../BattleCard";
-import ChartOne from "../../../ChartOne";
+import ChartOne from "../../../ChartOne"; 
+import { PokemonList } from "../../Main/PokeDex/pokemonList/PokemonList";
+import { PokemonStatsCard } from "../PokeDex/pokemonStatsCard/PokemonStatsCard";
+
+
 
 import pokemonList from '../PokeDex/pokemonList/PokemonList'
 import {
@@ -48,7 +52,7 @@ ChartJS.register(
 );
 
 
-export default function Battle({props }) {
+export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
   const pokedata = useOutletContext();
 
   const [genPokeListItem, setgenPokeListItem] = useState([]);
@@ -56,6 +60,8 @@ export default function Battle({props }) {
 
   const [pokeStats, setPokeStats] = useState([]);
   const [pokeStats2, setPokeStats2] = useState([]);
+
+  
 
   const options = {
     responsive: true,
@@ -73,8 +79,7 @@ export default function Battle({props }) {
   const labels = ['Health', 'Damage', 'attack', 'special-attack', 'special-defence', 'speed'];
 
   
-
-
+  
 
   useEffect(() => {
     axios
@@ -153,7 +158,10 @@ export default function Battle({props }) {
         >
           <h3 id="bttn">{props.pname}</h3>
         </a> */}
+
         <li>{genPokeListItem}</li>
+
+        {/* <PokemonList data={pokemonDataBaseNamesList} onClick={onclickPokemonHandler} /> */}
                 
               </ul>
             </label>
@@ -168,6 +176,8 @@ export default function Battle({props }) {
               <ul className="dd-menu">
 
                 <li>{genPokeListItem2}</li>
+
+                {/* <PokemonList data={pokemonDataBaseNamesList} onClick={onclickPokemonHandler} /> */}
 
               </ul>
             </label>

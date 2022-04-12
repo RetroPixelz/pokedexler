@@ -5,11 +5,11 @@ export const BattleNamesList = (data, name) => {
     return (
         <div>
             
-             {/* {data.map((item) => {
+             {data.map((item) => {
             return(
                 <Itemcard name={item}/>
             )
-        })} */}
+        })}
         </div>
     )
 }
