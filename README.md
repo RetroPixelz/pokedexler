@@ -206,7 +206,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image9][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/custom%20UI.png]
+![image9][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-1.jpg]
 <br>
 ![image10][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-2.jpg]
 
@@ -215,7 +215,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 To see a run through of the application, click below:
 
-[View Demonstration](path/to/video/demonstration)
+[View Demonstration](https://www.youtube.com/watch?v=ZFGl2BVmUms)
 
 
 See the [open issues](https://github.com/Justin-OwiStudent/pokedexler/issues) for a list of proposed features (and known issues).
@@ -233,15 +233,12 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **Justin Koster** - [email@address](200100@virtualwindow.co.za)  
+* **Justin Koster** - [200100@virtualwindow.co.za](200100@virtualwindow.co.za)  
 * **Project Link** - https://github.com/Justin-OwiStudent/pokedexler
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 <!-- all resources that you used and Acknowledgements here -->
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
+* [pngegg](https://www.pngegg.com/)
+
 
