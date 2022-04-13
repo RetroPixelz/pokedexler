@@ -113,6 +113,7 @@ export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase }) {
     setPokeStats2(localStorage.getItem("PokemonTwo").split(','));
   }, []);
 
+  
 
 
   const data = {
@@ -143,21 +144,15 @@ export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase }) {
             <label className="dropdown">
               <div className="dd-button">Select a Pokemon</div>
               <input type="checkbox" className="dd-input" id="test" />
-              <ul className="dd-menu">
-                {/* <li> <BattleNamesList /> </li> */}
+              <ul className="dd-menu">              
                 <li>{genPokeListItem}</li>
-                {/* <li>{pokemonDataBaseNamesList}</li> */}
-
               </ul>
             </label>
-            {/* <BattleNamesList data={pokemonDataBaseNamesList} onClick={onclickPokemonHandler} /> */}
-
           </div>
 
           <div className="sel">
             <label className="dropdown">
               <div className="dd-button">Select a Pokemon</div>
-
               <input type="checkbox" className="dd-input" id="test" />
               <ul className="dd-menu">
                 <li>{genPokeListItem2}</li>

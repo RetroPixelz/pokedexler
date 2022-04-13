@@ -211,9 +211,9 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image9][image9]
+![image9][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-1.png]
 <br>
-![image10][image10]
+![image10][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-2.png]
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
