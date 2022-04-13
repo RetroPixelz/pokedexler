@@ -9,7 +9,6 @@ export const PokemonList = ({data, onClick}) => {
             return(
                 <Item onClick={onClick} name={item}/>
             )
-            console.log(data)
         })}
     </div>
   )

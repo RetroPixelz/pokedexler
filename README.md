@@ -127,10 +127,10 @@ here we have our own PokeDex, where you are able to scroll and see all the stats
 
 here we are able to compare two different pokemon and see those stats compared within different kinds of charts.
 
-![image4][image4]
+![image4][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/line.png]
 ### Feature 3
 
-lastly we have a lineline chart here where we are able to see the different growthrates pokemon have, we are bel to see slow,medium,fas, slow then fast and also fast then slow, each one has a different rate at which they grow and agin experience.
+lastly we have a line chart here where we are able to see the different growthrates pokemon have, we are bel to see slow,medium,fas, slow then fast and also fast then slow, each one has a different rate at which they grow and agin experience.
 
 
 
