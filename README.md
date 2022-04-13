@@ -46,7 +46,6 @@
   * [How to install](#how-to-install)
 * [Features and Functionality](#features-and-functionality)
 * [Concept Process](#concept-process)
-   * [Ideation](#ideation)
    * [Wireframes](#wireframes)
    * [Custom UI](#user-flow)
 * [Development Process](#development-process)
@@ -65,7 +64,7 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 <!-- header image of project -->
-![image1][image1]
+![image1][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/custom%20UI.png]
 
 ### Project Description
 
