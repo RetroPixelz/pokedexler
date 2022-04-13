@@ -29,9 +29,8 @@ const Card = (props) => {
       let SPEED = Response.data.stats[5].base_stat;
      
       let PokemonOne = [HP, DMG, ATK, SPECATK, SPECDEF, SPEED];
-      setGenPokemonOne(PokemonOne)
+      setGenPokemonOne(genPokemonOne)
  
-
       
       // let genDataSetOne = [HP, DMG, ATK];
       // setgenDataSetOne(genDataSetOne)
@@ -51,24 +50,7 @@ const Card = (props) => {
       imgStyle.style.backgroundImage = "url(" + imgURL + ")";
       document.getElementById("imge").style.backgroundImage =
         "'url(" + Response.data.sprites.front_default.url + ")'";
-
-
-        // const data = {
-        //   labels,
-        //   datasets: [
-        //     {
-        //       label: 'PokemonOne',
-        //       data: PokemonOne,
-        //       backgroundColor: 'rgba(255, 99, 132, 0.5)',
-        //     },
-        //     {
-        //       label: 'PokemonTwo',
-        //       data: PokemonOne,
-        //       backgroundColor: 'rgba(53, 162, 235, 0.5)',
-        //     },
-        //   ],
-        // };
-        
+  
     });
   }
 

@@ -109,8 +109,15 @@ export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase }) {
         ));
         setgenPokeListItem2(battleItem);
       });
+
     setPokeStats(localStorage.getItem("PokemonOne").split(','));
     setPokeStats2(localStorage.getItem("PokemonTwo").split(','));
+
+    
+
+
+    
+    
   }, []);
 
   
