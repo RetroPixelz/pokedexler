@@ -64,7 +64,7 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 <!-- header image of project -->
-![image1][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/custom%20UI.png]
+![image1](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/custom%20UI.png)
 
 ### Project Description
 
@@ -121,12 +121,12 @@ Run the following in the command-line to install all the required dependencies:
 here we have our own PokeDex, where you are able to scroll and see all the stats of your chosen pokemon.
 
 
-![image3][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Feature2.jpg]
+![image3](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Feature2.jpg)
 ### Feature 2
 
 here we are able to compare two different pokemon and see those stats compared within different kinds of charts.
 
-![image4][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/line.png]
+![image4](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/line.png)
 ### Feature 3
 
 lastly we have a line chart here where we are able to see the different growthrates pokemon have, we are bel to see slow,medium,fas, slow then fast and also fast then slow, each one has a different rate at which they grow and agin experience.
@@ -146,11 +146,11 @@ at first i needed to find an API of my choosing to base my application off of, i
 
 ### Wireframes
 
-![image7][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Wireframes.png]
+![image7](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Wireframes.png)
 
 ### Custom UI
 
-![image8][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/custom%20UI.png]
+![image8](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/custom%20UI.png)
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -205,9 +205,9 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image9][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-1.jpg]
+![image9](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-1.jpg)
 <br>
-![image10][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-2.jpg]
+![image10](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-2.jpg)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
