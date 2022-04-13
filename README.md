@@ -122,7 +122,7 @@ Run the following in the command-line to install all the required dependencies:
 here we have our own PokeDex, where you are able to scroll and see all the stats of your chosen pokemon.
 
 
-![image3][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Feature2_80.png]
+![image3][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Feature2.jpg]
 ### Feature 2
 
 here we are able to compare two different pokemon and see those stats compared within different kinds of charts.
@@ -206,9 +206,9 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image9][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-1.png]
+![image9][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-1.jpg]
 <br>
-![image10][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-2.png]
+![image10][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-2.jpg]
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
