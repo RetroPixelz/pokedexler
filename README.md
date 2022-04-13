@@ -144,19 +144,14 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 at first i needed to find an API of my choosing to base my application off of, i chose the PokeAPI and from that i decided to make my own pokedex and a compare page where i would be able to compare the stats from two pokemon against each other to see which is stronger, i was also tasked to make a timeline page and after looking at my data i was able to get the growthrates and show on a timeline chart the different speed pokemon grow and gain experience.
 
-### Ideation
-
-![image5][image5]
-<br>
-![image6][image6]
 
 ### Wireframes
 
-![image7][image7]
+![image7][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Wireframes.png]
 
 ### Custom UI
 
-![image8][image8]
+![image8][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/custom%20UI.png]
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
