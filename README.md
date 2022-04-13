@@ -116,13 +116,13 @@ Run the following in the command-line to install all the required dependencies:
 ## Features and Functionality
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
-![image2](https://raw.githubusercontent.com/MikeMaynard14/termoneexample/main/src/assets/mockup.jpg)
+![image2](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/custom%20UI.png)
 
 ### All the Pokemon Data you need !
 here we have our own PokeDex, where you are able to scroll and see all the stats of your chosen pokemon.
 
 
-![image3][image3]
+![image3][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Feature2.png]
 ### Feature 2
 
 here we are able to compare two different pokemon and see those stats compared within different kinds of charts.
