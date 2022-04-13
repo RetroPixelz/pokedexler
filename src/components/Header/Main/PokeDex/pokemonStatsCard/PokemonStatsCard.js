@@ -22,9 +22,9 @@ export const PokemonStatsCard = ({pokemonChosen}) => {
         
             image: pokemonChosen.sprites.front_shiny,
             name: 'Name: ' + pokemonChosen.name,
-            hp: 'Name: ' + pokemonChosen.stats[0].base_stat,
-            dmg: 'Name: ' +  pokemonChosen.stats[1].base_stat,
-            atk: 'Name: ' +  pokemonChosen.stats[3].base_stat,
+            hp: 'Health: ' + pokemonChosen.stats[0].base_stat,
+            dmg: 'Damage: ' +  pokemonChosen.stats[1].base_stat,
+            atk: 'Attack: ' +  pokemonChosen.stats[3].base_stat,
             spec_atk: 'special-attack: ' +  pokemonChosen.stats[4].base_stat,
             spec_def: 'special-defense: ' +  pokemonChosen.stats[5].base_stat,
             speed: 'speed: '+  pokemonChosen.stats[5].base_stat,
