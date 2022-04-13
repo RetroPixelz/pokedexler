@@ -1,15 +1,24 @@
 import React from 'react'
-import { Itemcard } from './Itemcard'
+import { PokemonList } from '../../PokeDex/pokemonList/PokemonList'
+import { Item } from './Item'
 
 export const BattleNamesList = (data, name) => {
     return (
         <div>
+            {/* {data.map((item) => {
+                return (
+                    <Item name={item} />
+                )
+            })} */}
+
+            {data.map((item) => {
+                return(
+                    <PokemonList/>
+                )
+            })}
+
             
-             {data.map((item) => {
-            return(
-                <Itemcard name={item}/>
-            )
-        })}
+            {/* <Item name={name}/> */}
         </div>
     )
 }

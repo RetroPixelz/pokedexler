@@ -1,8 +1,11 @@
 import axios from "axios";
-import React from "react";
+import React, { useState } from "react";
+
 
 
 const Card = (props) => {
+
+  const [genDataSetOne, setgenDataSetOne] = useState([]);
   
   function showPoke() {
     axios.get(props.plink).then((Response) => {
@@ -23,9 +26,14 @@ const Card = (props) => {
       let SPECDEF = Response.data.stats[4].base_stat;
       let SPEED = Response.data.stats[5].base_stat;
      
-
-
       let PokemonOne = [HP, DMG, ATK, SPECATK, SPECDEF, SPEED];
+ 
+      // let genDataSetOne = [HP, DMG, ATK];
+      // setgenDataSetOne(genDataSetOne)
+      
+      // let PokemonOne = [HP, DMG, ATK, SPECATK, SPECDEF, SPEED];
+      // let PokemonOne = [HP, DMG, ATK, SPECATK, SPECDEF, SPEED];
+
       localStorage.setItem("PokemonOne", PokemonOne)
       
      hp.innerHTML = `Health:  ` + Response.data.stats[0].base_stat;
@@ -46,15 +54,9 @@ const Card = (props) => {
   return (
     <>
       <div className="poke-list-item">
-        <a
-          onClick={() => {
-            showPoke();
-          }}
-        >
+        <a onClick={() => {showPoke(); }} >
           <h3 id="bttn">{props.pname}</h3>
-        </a>
-
-     
+        </a>    
       </div>
     </>
   );

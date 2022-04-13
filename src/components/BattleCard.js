@@ -29,8 +29,8 @@ const PokeListItem2 = (props) => {
      
       let PokemonTwo = [HP, DMG, ATK, SPECATK, SPECDEF, SPEED];
       
-      // localStorage.setItem("PokemonTwo", PokemonTwo)
-      // console.log(PokemonTwo)
+      localStorage.setItem("PokemonTwo", PokemonTwo)
+      
       
      hp2.innerHTML = `Health:` + Response.data.stats[0].base_stat;
      dmg2.innerHTML = `Defence:` + Response.data.stats[2].base_stat;

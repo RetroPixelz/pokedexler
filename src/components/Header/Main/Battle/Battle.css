@@ -111,9 +111,25 @@
     padding: 10px 20px;
     cursor: pointer;
     white-space: nowrap;
-  }
-  
- 
+    overflow: scroll;
+  overflow-x: hidden;
+}
+
+.poke-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.poke-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.poke-list::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.poke-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
   
   .dd-menu li a {
     display: block;
@@ -216,7 +232,7 @@ body {
     }
 
 .vs {
-    background-image: url(../img/pokeball.png);
+    
     background-size: 100% 100%;
     width: 100px;
     height: 100px;
@@ -285,7 +301,7 @@ body {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  width: 45%;
+  width: 33%;
   margin: 10px;
   height: 90%;
   background-color: rgb(71, 71, 71);
@@ -296,7 +312,7 @@ body {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  width: 50%;
+  width: 33%;
   height: 90%;
   margin: 10px;
 
@@ -304,3 +320,14 @@ body {
   border-radius: 20px;
   }
 
+  .charts:nth-child(3) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 33%;
+    height: 90%;
+    margin: 10px;
+  
+    background-color: rgb(71, 71, 71);
+    border-radius: 20px;
+    }

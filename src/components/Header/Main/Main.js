@@ -4,9 +4,6 @@ import './Main.css'
 import { useOutletContext } from "react-router-dom";
 
 
-
-
-
 export default function Main() {
 
   const data = useOutletContext();
@@ -22,7 +19,6 @@ export default function Main() {
     
         <div className="main-block">
           <PokeDex pokemonDataBaseNamesList={data.pokemonDataBaseNamesList} pokemonDataBase={data.pokemonDataBase} />
-         
         </div>
 
         <div className="show">

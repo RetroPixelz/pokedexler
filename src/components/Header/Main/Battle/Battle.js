@@ -3,20 +3,18 @@ import "./Battle.css";
 import axios from "axios";
 import Card from "../../../Card";
 import PokeListItem2 from "../../../BattleCard";
-import ChartOne from "../../../ChartOne"; 
+import ChartOne from "../../../ChartOne";
 import { PokemonList } from "../../Main/PokeDex/pokemonList/PokemonList";
 import { PokemonStatsCard } from "../PokeDex/pokemonStatsCard/PokemonStatsCard";
 
 
-
-import pokemonList from '../PokeDex/pokemonList/PokemonList'
 import {
   CategoryScale,
   LinearScale,
   BarElement,
   Title,
 } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+import { Bar, Pie } from 'react-chartjs-2';
 
 import {
   Chart as ChartJS,
@@ -41,7 +39,6 @@ ChartJS.register(
 );
 
 
-
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -52,7 +49,7 @@ ChartJS.register(
 );
 
 
-export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
+export default function Battle({ pokemonDataBaseNamesList, pokemonDataBase }) {
   const pokedata = useOutletContext();
 
   const [genPokeListItem, setgenPokeListItem] = useState([]);
@@ -60,14 +57,12 @@ export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
 
   const [pokeStats, setPokeStats] = useState([]);
   const [pokeStats2, setPokeStats2] = useState([]);
-
   
-
   const options = {
     responsive: true,
     plugins: {
       legend: {
-        position: 'top' ,
+        position: 'top',
       },
       title: {
         display: true,
@@ -79,7 +74,7 @@ export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
   const labels = ['Health', 'Damage', 'attack', 'special-attack', 'special-defence', 'speed'];
 
   
-  
+
 
   useEffect(() => {
     axios
@@ -93,12 +88,11 @@ export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
             url: pokemons[i].url,
           });
         }
-          let startItem = pokeData.map((item) => (
-            <Card pname={item.name} plink={item.url} />
-          ));
+ let startItem = pokeData.map((item) => (
+          <Card pname={item.name} plink={item.url} />
+        ));
         setgenPokeListItem(startItem);
       });
-
     axios
       .get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=100")
       .then((response) => {
@@ -115,8 +109,8 @@ export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
         ));
         setgenPokeListItem2(battleItem);
       });
-      setPokeStats(localStorage.getItem("PokemonOne").split(','));
-      setPokeStats2(localStorage.getItem("PokemonTwo").split(','));
+    setPokeStats(localStorage.getItem("PokemonOne").split(','));
+    setPokeStats2(localStorage.getItem("PokemonTwo").split(','));
   }, []);
 
 
@@ -136,7 +130,9 @@ export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
       },
     ],
   };
-  
+
+
+
   
 
   return (
@@ -146,25 +142,16 @@ export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
           <div className="sel">
             <label className="dropdown">
               <div className="dd-button">Select a Pokemon</div>
-
               <input type="checkbox" className="dd-input" id="test" />
-
               <ul className="dd-menu">
+                {/* <li> <BattleNamesList /> </li> */}
+                <li>{genPokeListItem}</li>
+                {/* <li>{pokemonDataBaseNamesList}</li> */}
 
-              {/* <a
-          onClick={() => {
-            showPoke();
-          }}
-        >
-          <h3 id="bttn">{props.pname}</h3>
-        </a> */}
-
-        <li>{genPokeListItem}</li>
-
-        {/* <PokemonList data={pokemonDataBaseNamesList} onClick={onclickPokemonHandler} /> */}
-                
               </ul>
             </label>
+            {/* <BattleNamesList data={pokemonDataBaseNamesList} onClick={onclickPokemonHandler} /> */}
+
           </div>
 
           <div className="sel">
@@ -172,24 +159,21 @@ export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
               <div className="dd-button">Select a Pokemon</div>
 
               <input type="checkbox" className="dd-input" id="test" />
-
               <ul className="dd-menu">
-
                 <li>{genPokeListItem2}</li>
-
-                {/* <PokemonList data={pokemonDataBaseNamesList} onClick={onclickPokemonHandler} /> */}
-
               </ul>
             </label>
           </div>
         </div>
-        
+
         <div className="flex-container">
           <div className="flex-item">
+
+         
             <div className="pokemon-1" id="imge"></div>
-            
+
             <div className="stats-1">
-              <h3 id="hp"> Health: </h3>
+              <h3 id="hp"> Health:  </h3>
               <h3 id="dmg"> Damage: </h3>
               <h3 id="atk"> Attack: </h3>
               <h3 id="spec-atk"> Special-attack: </h3>
@@ -199,7 +183,7 @@ export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
           </div>
           <div className="flex-item" id="fight">
             <div className="vs"></div>
-           
+
           </div>
           <div className="flex-item">
             <div className="pokemon-2" id="imgee2"></div>
@@ -215,14 +199,16 @@ export default function Battle({pokemonDataBaseNamesList, pokemonDataBase}) {
         </div>
         <div className="row-3">
           <div className="charts">
-          <Bar options={options} data={data} />
+            <Bar options={options} data={data} />
           </div>
           <div className="charts">
-          <Radar data={data} options={{ maintainAspectRatio: false }} />
+            <Radar data={data} options={{ maintainAspectRatio: false }} />
           </div>
-          
+          <div className="charts">
+            <Pie data={data} options={{ maintainAspectRatio: false }} />
+          </div>
 
-          
+
         </div>
       </div>
     </>

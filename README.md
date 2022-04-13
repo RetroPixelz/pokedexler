@@ -20,11 +20,11 @@
     <img src="https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/LOGO.gif" alt="Logo" width="140" height="140">
   </a>
   
-  <h3 align="center">OpenSpace</h3>
+  <h3 align="center">PokeDexler</h3>
 
   <p align="center">
-    A react project using the Space X Api to demonstrate data visualization using charts js  <br>
-    <i>This However is a template file for DV200 Students!</i> 
+    A react project using the Poke Api to demonstrate data visualization using charts js  <br>
+   
     
    <br />
    <br />
@@ -69,13 +69,13 @@
 
 ### Project Description
 
-A nice introduction to this amazing project of mine.
+This project of mine is made using react js aswella s implementation of charts js, i made use of the PokeAPI to do some data visualization of pokemon data by means of creating a pokedex and comparing two pokemon with their data displayed in different charts.
 
 ### Built With
 
 * [React](https://reactjs.org/)
-* [Technology Name](path/to/technology/website)
-* [Technology Name](path/to/technology/website)
+* [react charts 2](https://react-chartjs-2.js.org/)
+
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
@@ -93,12 +93,12 @@ Ensure that you have the latest version of [NPM](https://www.npmjs.com/) install
 Here are a couple of ways to clone this repo:
 
 1. GitHub Desktop </br>
-Enter `https://github.com/MikeMaynard14/termoneexample.git` into the URL field and press the `Clone` button.
+Enter `https://github.com/Justin-OwiStudent/pokedexler` into the URL field and press the `Clone` button.
 
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/MikeMaynard14/termoneexample.git
+   git clone https://github.com/Justin-OwiStudent/pokedexler
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
@@ -119,22 +119,21 @@ Run the following in the command-line to install all the required dependencies:
 ![image2](https://raw.githubusercontent.com/MikeMaynard14/termoneexample/main/src/assets/mockup.jpg)
 
 ### All the Pokemon Data you need !
+here we have our own PokeDex, where you are able to scroll and see all the stats of your chosen pokemon.
 
-using the pokeAPI we have made our very own PokeDex, we are also abelt o compare two different pokemon and see those stats compared with two different kinds of charts.
 
 ![image3][image3]
 ### Feature 2
 
-here we have our own PokeDex, where you are able to scroll and see all the stats of your chosen pokemon.
+here we are able to compare two different pokemon and see those stats compared within different kinds of charts.
 
 ![image4][image4]
 ### Feature 3
 
-here you are able to select two different pokemons and compare their base stats against each other to see which is stronger !
-
-![image5][image5]
-
 lastly we have a lineline chart here where we are able to see the different growthrates pokemon have, we are bel to see slow,medium,fas, slow then fast and also fast then slow, each one has a different rate at which they grow and agin experience.
+
+
+
 
 <!-- CONCEPT PROCESS -->
 <!-- Briefly explain your concept ideation process -->
@@ -172,9 +171,10 @@ i made use of css and html to structure my pokedex and then using react.js to ge
 
 * Utilized React `Charts.JS` dependency for Data visualization
 * Implemented Routing with `React-Router v6`.
-* API End Point: link Here 
-* `Plugin` for this.
-* ETC.
+* API End Point: `https://pokeapi.co/` 
+* i had a difficult time getting the data to work from my API, at first the endpoint i had only gave me name of said pokemon and also a url, that url containing allt he further information of the pokemon.
+* getting my pokemon data to carry through to a different component was a challenge i faced 
+* i had to get the data to carry though from the further axios request after the first one to get the individual data fron the pokemon
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
@@ -191,7 +191,6 @@ i made use of css and html to structure my pokedex and then using react.js to ge
 * i struggled getting the hang of useEffects and getting them to work porperly.
 * i struggled understanding how components fuction together and how you can call a componant within an componant.
 * i struggled getting the data to work within and across my components.
-
 
 
 #### Above And Beyond

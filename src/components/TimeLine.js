@@ -129,7 +129,7 @@ const TimeLine = () => {
       {
         label: selectedDataSet,
         data: genSlowRate,
-        borderColor: "rgb(255, 99, 132)",
+        borderColor: "rgb(231, 0, 0)",
         backgroundColor: "rgba(255, 99, 132, 0.5)",
       },
     ],
@@ -139,7 +139,7 @@ const TimeLine = () => {
     <>
       <div className="Back">
         <div className="Statement">
-          <h3>have a look at the different speeds some pokemon </h3>
+          <h3>Here is a list of the Different growth rates pokemons level up at ! </h3>
         </div>
 
         <div className="container">
