@@ -122,7 +122,7 @@ Run the following in the command-line to install all the required dependencies:
 here we have our own PokeDex, where you are able to scroll and see all the stats of your chosen pokemon.
 
 
-![image3][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Feature2.png]
+![image3][https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Feature2_80.png]
 ### Feature 2
 
 here we are able to compare two different pokemon and see those stats compared within different kinds of charts.
