@@ -240,5 +240,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 ## Acknowledgements
 <!-- all resources that you used and Acknowledgements here -->
 * [pngegg](https://www.pngegg.com/)
+* [flaticon](https://www.flaticon.com/)
+
 
 
