@@ -16,6 +16,8 @@ export default function Main() {
     
         </div>
 
+        <h1>Welcome to the poxedexler, Where you can search throught our very own pokendex or even do a battle of your own !</h1>
+
     
         <div className="main-block">
           <PokeDex pokemonDataBaseNamesList={data.pokemonDataBaseNamesList} pokemonDataBase={data.pokemonDataBase} />

@@ -6,7 +6,7 @@
 .battleground2 {
   width: calc(85%);
   float: right;
-  height: 100vh;
+  height: 120vh;
   background-color: rgba(37, 189, 176, 0.644);
   background-image: url(./img/background.jpg);
   background-attachment: fixed;
